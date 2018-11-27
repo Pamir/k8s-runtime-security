@@ -59,7 +59,7 @@ curl -X POST \
     -H "Authorization: Bearer $(gcloud auth print-access-token)"  \
     --data-binary @/tmp/note_payload.json  \
     "https://containeranalysis.googleapis.com/v1beta1/projects/${PROJECT_ID}/notes/?noteId=${NOTE_ID}"
-```bash
+```
 
 Verify Note </br>
 ```bash
