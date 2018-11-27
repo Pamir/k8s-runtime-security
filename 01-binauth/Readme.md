@@ -181,4 +181,7 @@ curl -vvv -X DELETE  \
     "https://containeranalysis.googleapis.com/v1alpha1/projects/${PROJECT_ID}/notes/${NOTE_ID}"
 
 gcloud beta container binauthz attestors delete $ATTESTOR
+gpg --delete-secret-keys "test-attestor@example.com"
+gpg --delete-keys "test-attestor@example.com"
+
 ```
