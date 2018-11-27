@@ -1,4 +1,5 @@
 #### Binary Authorization
+##### Fixed version of [Binary Authorization Documentation](https://cloud.google.com/binary-authorization/docs/getting-started-cli)
 ```bash
 PROJECT_ID=PROJECT_ID
 gcloud config set project ${PROJECT_ID}
