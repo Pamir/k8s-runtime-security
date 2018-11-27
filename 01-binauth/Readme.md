@@ -175,4 +175,10 @@ Clean Up </br>
 gcloud container clusters delete \
     --zone=us-central1-a \
     test-cluster
+
+curl -vvv -X DELETE  \
+    -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+    "https://containeranalysis.googleapis.com/v1alpha1/projects/${PROJECT_ID}/notes/${NOTE_ID}"
+
+gcloud beta container binauthz attestors delete $ATTESTOR
 ```
